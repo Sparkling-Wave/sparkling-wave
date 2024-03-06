@@ -1,6 +1,6 @@
 # Sparkling Wave Investment Company Limited Website
 
-![Sparkle Wave Investment Company Limited Logo](https://firebasestorage.googleapis.com/v0/b/easy-resume-express.appspot.com/o/sparkle_wave.png?alt=media&token=ccd7de0c-1387-456a-b480-804021acdd57)
+![Sparkle Wave Investment Company Limited Logo](https://firebasestorage.googleapis.com/v0/b/easy-resume-express.appspot.com/o/sparkle_wave.png?alt=media&token=91079b21-4f9c-4935-8f03-0291751f725b)
 
 Welcome to the Sparkling Wave Investment Company Limited website! This repository contains the HTML, CSS, and JS code for our dynamic fintech company's online presence. Feel free to explore the codebase and contribute to our mission of revolutionizing the financial landscape and enhancing mobility.
 
