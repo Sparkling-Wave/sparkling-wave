@@ -1738,15 +1738,27 @@ h3 {
 .about_area {
   margin-bottom: 150px;
 }
+.mission-area {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
 
 /* line 3, ../../Arafath/CL/December/234. Finance/HTML/scss/_about.scss */
 .about_area.plus_padding {
   padding-top: 150px;
 }
 
+.mission-area .plus_padding {
+  padding-top: 150px;
+}
+
 @media (max-width: 767px) {
   /* line 3, ../../Arafath/CL/December/234. Finance/HTML/scss/_about.scss */
   .about_area.plus_padding {
+    padding-top: 60px;
+  }
+
+  .mission_area.plus_padding {
     padding-top: 60px;
   }
 }
@@ -1756,11 +1768,18 @@ h3 {
   .about_area.plus_padding {
     padding-top: 100px;
   }
+
+  .mission-area.plus_padding {
+    padding-top: 100px;
+  }
 }
 
 @media (max-width: 767px) {
   /* line 1, ../../Arafath/CL/December/234. Finance/HTML/scss/_about.scss */
   .about_area {
+    margin-bottom: 50px;
+  }
+  .mission-area {
     margin-bottom: 50px;
   }
 }
@@ -1770,11 +1789,18 @@ h3 {
   .about_area {
     margin-bottom: 100px;
   }
+
+  .mission_area {
+    margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 767px) {
   /* line 18, ../../Arafath/CL/December/234. Finance/HTML/scss/_about.scss */
   .about_area .about_img {
+    margin-bottom: 20px;
+  }
+  .mission_area .about_img {
     margin-bottom: 20px;
   }
 }
@@ -1783,15 +1809,26 @@ h3 {
 .about_area .about_img img {
   width: 100%;
 }
+.mission_area .about_img img {
+  width: 100%;
+}
 
 /* line 27, ../../Arafath/CL/December/234. Finance/HTML/scss/_about.scss */
 .about_area .about_info .section_title {
   margin-bottom: 36px;
 }
 
+.mission_area .about_info .section_title {
+  margin-bottom: 36px;
+}
+
+
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 27, ../../Arafath/CL/December/234. Finance/HTML/scss/_about.scss */
   .about_area .about_info .section_title {
+    margin-bottom: 20px;
+  }
+  .mission-area .about_info .section_title {
     margin-bottom: 20px;
   }
 }
@@ -1801,15 +1838,32 @@ h3 {
   color: #7a838b;
   font-size: 16px;
 }
+.mission_area .about_info p {
+  color: #7a838b;
+  font-size: 16px;
+}
 
 /* line 37, ../../Arafath/CL/December/234. Finance/HTML/scss/_about.scss */
 .about_area .about_info .about_list {
   margin-bottom: 52px;
   margin-top: 10px;
 }
+.mission_area .about_info .about_list {
+  margin-bottom: 52px;
+  margin-top: 10px;
+}
+
 
 /* line 41, ../../Arafath/CL/December/234. Finance/HTML/scss/_about.scss */
 .about_area .about_info .about_list ul li {
+  font-size: 16px;
+  line-height: 32px;
+  color: #180425;
+  font-weight: 400;
+  position: relative;
+  padding-left: 23px;
+}
+.mission_area .about_info .about_list ul li {
   font-size: 16px;
   line-height: 32px;
   color: #180425;
@@ -1824,10 +1878,30 @@ h3 {
     font-size: 14px;
     line-height: 28px;
   }
+  .mission_area .about_info .about_list ul li {
+    font-size: 14px;
+    line-height: 28px;
+  }
 }
 
 /* line 52, ../../Arafath/CL/December/234. Finance/HTML/scss/_about.scss */
 .about_area .about_info .about_list ul li::before {
+  position: absolute;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #a617ff;
+  content: "";
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.mission_area .about_info .about_list ul li::before {
   position: absolute;
   left: 0;
   width: 8px;
