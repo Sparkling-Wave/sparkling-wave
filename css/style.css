@@ -5,6 +5,9 @@
 .footer_logo img {
   max-width: 10rem;
 }
+.footer_logo{
+  background-color:#500480;
+}
 .active {
   color: #500480;
   font-weight: 700;
