@@ -3240,6 +3240,10 @@ p #amount {
 .bradcam_bg_5 {
   background-image: url(../img/banner/bradcam5.jpg);
 }
+.wider_service {
+  max-width: 800px;  /* Adjust this value as needed */
+  width: 100%;       /* Ensures it responds to the size of the container */
+}
 
 /* line 10, ../../Arafath/CL/December/234. Finance/HTML/scss/_bradcam.scss */
 .bradcam_area {
