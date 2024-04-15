@@ -490,8 +490,8 @@ h3 {
 
 /* line 43, ../../Arafath/CL/December/234. Finance/HTML/scss/_btn.scss */
 .boxed-btn3:hover {
-  /* color: #500480 !important; */
-  border: 1px solid #ffffff;
+  color: #500480 !important;
+  border: 1px solid #500480;
   background: transparent;
 }
 
