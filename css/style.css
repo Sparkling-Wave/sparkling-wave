@@ -12,6 +12,10 @@
   color: #500480;
   font-weight: 700;
 }
+#navHover:hover {
+  color: gold;
+  cursor: pointer;
+}
 .wide {
   margin-block: 0.5rem;
   width: 100%;
@@ -522,10 +526,10 @@ h3 {
 /* line 67, ../../Arafath/CL/December/234. Finance/HTML/scss/_btn.scss */
 .boxed-btn4:hover {
   color: #fff !important;
-  border: 1px solid #e4befb;
+  border: 1px solid #500480;
   background: transparent;
   border: 0;
-  background: #e4befb;
+  background: #500480;
   border: 1px solid transparent;
 }
 
