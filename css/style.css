@@ -2313,13 +2313,14 @@ h3 {
   font-family: "themify";
   color: #a617ff;
   font-size: 14px;
-  left: -24px;
+  left: -8px;
 }
 
 @media (max-width: 767px) {
   /* line 65, ../../Arafath/CL/December/234. Finance/HTML/scss/_accordion.scss */
   #accordion h5 button.btn.btn-link:after {
-    right: 10px;
+    left: 1px;
+    font-size: small;
   }
 }
 
