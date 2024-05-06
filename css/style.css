@@ -3254,6 +3254,18 @@ p #amount {
 .bradcam_bg_7{
   background-image: url(../img/banner/bradcam7.png);
 }
+.bradcam_bg_8{
+  background-image: url(../img/banner/bradcam1.png);
+}
+.bradcam_bg_9{
+  background-image: url(../img/banner/bradcam9.png);
+}
+.bradcam_bg_10{
+  background-image: url(../img/banner/bradcam10.png);
+}
+
+
+
 .wider_service {
   max-width: 800px;  /* Adjust this value as needed */
   width: 100%;       /* Ensures it responds to the size of the container */
