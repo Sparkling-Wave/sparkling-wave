@@ -11,13 +11,12 @@
 .active {
   color: #500480;
   font-weight: 700;
+  
+}
+.under{
   text-decoration: underline 3px solid gold;
 }
 
-#navHover:hover {
-  color: gold;
-  cursor: pointer;
-}
 
 .wide {
   margin-block: 0.5rem;
