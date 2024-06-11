@@ -13,6 +13,38 @@
   font-weight: 700;
   
 }
+
+/* Ensure the blob is positioned absolutely and behind the content */
+.animated-blob {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: auto;
+  opacity: 0.3;
+  z-index: -1; /* Ensures the blob is behind other elements */
+  animation: moveBlob 20s infinite;
+}
+
+/* Define the keyframes for the blob's movement */
+@keyframes moveBlob {
+  0% {
+      transform: translate(100%, 0%);
+  }
+  25% {
+      transform: translate(-50%, 50%);
+  }
+  50% {
+      transform: translate(0%, 100%);
+  }
+  75% {
+      transform: translate(50%, -50%);
+  }
+  100% {
+      transform: translate(100%, 0%);
+  }
+}
+
 .under{
   text-decoration: underline 3px solid gold;
 }
