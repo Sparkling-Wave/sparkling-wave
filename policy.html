@@ -180,8 +180,8 @@
     </main>
 
 
- <!-- footer start -->
- <footer class="footer">
+   <!-- footer start -->
+   <footer class="footer">
     <div class="footer_top">
         <div class="container">
             <div class="row">
@@ -253,10 +253,12 @@
                         <h3 class="footer_title">
                             Subscribe
                         </h3>
-                        <form action="#" class="newsletter_form">
-                            <input type="text" placeholder="Enter your mail">
-                            <button type="submit">Subscribe</button>
+                        <!-- Functioning Newsletter -->
+                        <form action="mailto:hello@sparklingwavelimited.com.ng" method="post" enctype="text/plain" class="newsletter_form" id="newsletterForm">
+                          <input type="email" placeholder="Enter your email" id="emailInput" name="email" required>
+                          <button type="submit">Subscribe</button>
                         </form>
+                      
                         <p class="newsletter_text">Join our newsletter for updates and insights</p>
                     </div>
                 </div>
@@ -311,6 +313,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/mail-script.js"></script>
 
+<!-- Newsletter submission Js -->
+ <!-- <script src="./js/newsletterSubmission.js"></script> -->
 
 <script src="js/main.js"></script>
 </body>
