@@ -3302,6 +3302,11 @@ p #amount {
   background-image: url(../img/banner/Loan1.png);
 }
 
+.bradcam_bg_13 {
+  background-image: url(../img/banner/bradcam13.png);
+}
+
+
 
 .wider_service {
   max-width: 800px;  /* Adjust this value as needed */
