@@ -12,10 +12,7 @@
     }
   });
 
-
-
-
-
+                      
   $(document).ready(function () {
 
     // mobile_menu
@@ -70,7 +67,6 @@
         }
       });
     }
-
 
 
     // review-active
@@ -301,13 +297,29 @@
 
 })(jQuery);
 
-function submitLoanOfferFromWhatsApp() {
-  const amount = document.getElementById('requestedAmount');
-  const reqMonth = document.getElementById('month');
-  console.log(`Requested amount: ${reqAmt}`)
-  console.log(`Requested month: ${month}`)
-  var fullMessage = `Location: Website Homepage Loan Request%0Request Amount: ${reqAmt}%0AMonth Required ${month}`;
-  var whatsappUrl = `https://wa.me/2347069615095?text=${fullMessage}`;
+// function submitLoanOfferFromWhatsApp() {
+//   const amount = document.getElementById('requestedAmount');
+//   const reqMonth = document.getElementById('month');
+//   console.log(`Requested amount: ${reqAmt}`)
+//   console.log(`Requested month: ${month}`)
+//   var fullMessage = `Location: Website Homepage Loan Request%0Request Amount: ${reqAmt}%0AMonth Required ${month}`;
+//   var whatsappUrl = `https://wa.me/2347069615095?text=${fullMessage}`;
 
-  window.open(whatsappUrl, '_blank');
+//   window.open(whatsappUrl, '_blank');
+// }
+
+
+// This code allow you to send a form message from a form to your desired whatsapp Number
+function submitLoanOfferFromWhatsApp() {
+  const requestedAmount = document.getElementById('requestedAmount').value;
+  const month = document.getElementById('month').value;
+
+  if (requestedAmount && month) {
+      const whatsappNumber = '1234567890'; // Replace with your WhatsApp number
+      const whatsappMessage = `Hello, I would like to request a loan of ${requestedAmount} for a duration of ${month}.`;
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+      window.open(whatsappURL, '_blank');
+  } else {
+      alert('Please select both the requested amount and the month.');
+  }
 }

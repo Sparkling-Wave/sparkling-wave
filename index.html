@@ -118,10 +118,10 @@
                                     <div class="col-lg-12">
                                         <div class="single_input">
                                             <select name="requestedAmount" id="requestedAmount" class="wide">
-                                                <option data-display="requestedAmount">Amount</option>
+                                                <option value="" disabled selected>Amount</option>
                                                 <option value="N50,000.00">N50,000.00</option>
                                                 <option value="N100,000.00">N100,000.00</option>
-                                                <option value="N500,000.00">N500,000</option>
+                                                <option value="N500,000.00">N500,000.00</option>
                                                 <option value="N1,000,000.00">N1,000,000.00</option>
                                             </select>
                                         </div>
@@ -129,20 +129,21 @@
                                     <div class="col-lg-12">
                                         <div class="single_input">
                                             <select name="month" id="month" class="wide">
-                                                <option data-display="month">Month</option>
-                                                <option value="3-months">3 Month</option>
-                                                <option value="6-months">6 Month</option>
-                                                <option value="9-months">9 Month</option>
-                                                <option value="12-months">12 Month</option>
+                                                <option value="" disabled selected>Month</option>
+                                                <option value="3-months">3 Months</option>
+                                                <option value="6-months">6 Months</option>
+                                                <option value="9-months">9 Months</option>
+                                                <option value="12-months">12 Months</option>
                                             </select>
-                                         </div>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
                             <p>You have to pay <span>a token as processing fee</span></p>
                             <div class="submit_btn">
-                                <button class="boxed-btn3" type="submit" onclick="submitLoanOfferFromWhatsApp()">Continue</button>
+                                <button class="boxed-btn3" type="button" onclick="submitLoanOfferFromWhatsApp()">Continue</button>
                             </div>
+                        
                         </div>
                     </div>
                 </div>
@@ -351,7 +352,7 @@
                                                 </button>
                                             </h5>
                                         </div>
-                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" >
                                             <div class="card-body">For the client, 3 passport &  of i.d card, 2 guarantors & i.d card
                                             </div>
                                         </div>
@@ -364,7 +365,7 @@
                                                 </button>
                                             </h5>
                                         </div>
-                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion" style="">
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                             <div class="card-body">YES. Contact our Customer Service via Call/Whatsapp
                                             </div>
                                         </div>
@@ -377,7 +378,7 @@
                                                 </button>
                                             </h5>
                                         </div>
-                                        <div id="collapseThree4" class="collapse" aria-labelledby="headingThree4" data-parent="#accordion" style="">
+                                        <div id="collapseThree4" class="collapse" aria-labelledby="headingThree4" data-parent="#accordion">
                                             <div class="card-body">Age, Steady Income, Credit History, Debt-to-Income Ratio, Collateral(Depends on the amount), Employment Status, Residency Status
                                             </div>
                                         </div>
@@ -643,7 +644,7 @@
     <!-- Newsletter submission Js -->
      <!-- <script src="./js/newsletterSubmission.js"></script> -->
   
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
   </body>
   
   </html>
