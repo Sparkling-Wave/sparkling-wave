@@ -169,23 +169,23 @@
                 </div>
                 <div class="col-md-12">
                   <div class="single_field">
-                    <input type="text" placeholder="Your name" />
+                    <input type="text" id="name" placeholder="Your name" />
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="single_field">
-                    <input type="text" placeholder="Email" />
+                    <input type="text" id="email" placeholder="Email" />
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="single_field">
-                    <input type="text" placeholder="Phone no." />
+                    <input type="text" id="phone" placeholder="Phone no." />
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="single_field">
-                    <select class="wide">
-                      <option data-display="Purpose">Purpose</option>
+                    <select id="purpose" class="wide">
+                      <option value="" disabled selected>Purpose</option>
                       <option value="asset loan">Asset Loans</option>
                       <option value="cash loan">Cash Loans</option>
                       <option value="business loan">Business Loans</option>
@@ -193,12 +193,12 @@
                   </div>
                 </div>
                 <div class="col-md-12">
-                  <div class="single_field">
-                    <select class="wide">
-                      <option data-display="Amount">Amount</option>
-                      <option value="1">N50,000</option>
-                      <option value="2">N100,000</option>
-                      <option value="3">N500,000</option>
+                  <div class="single_input">
+                    <select id="requestedAmount" class="wide">
+                      <option value="" disabled selected>Amount</option>
+                      <option value="N50,000">N50,000</option>
+                      <option value="N100,000">N100,000</option>
+                      <option value="N500,000">N500,000</option>
                     </select>
                   </div>
                 </div>
@@ -207,7 +207,7 @@
                     <input
                       type="text"
                       name=""
-                      id="datepicker"
+                      id="month"
                       placeholder="Month"
                     />
                   </div>
@@ -221,7 +221,7 @@
                   <div class="single_field">
                     <textarea
                       name="#"
-                      id=""
+                      id="message"
                       cols="30"
                       rows="10"
                       placeholder="Message"
@@ -230,9 +230,12 @@
                 </div>
                 <div class="col-md-12">
                   <div class="submit_btn">
-                    <button class="boxed-btn3" type="submit">Apply Now</button>
+                    <button class="boxed-btn3" type="button" onclick="submitLoanOfferFromWhatsApp()">Apply Now</button>
                   </div>
                 </div>
+              </div>
+            </form>
+            
               </div>
             </form>
           </div>
@@ -285,8 +288,8 @@
   </div>
     <!-- works_area_end  -->
 
-   <!-- footer start -->
-   <footer class="footer">
+  <!-- footer start -->
+  <footer class="footer">
     <div class="footer_top">
         <div class="container">
             <div class="row">
@@ -300,27 +303,27 @@
                         <p>
                             hello@sparklingwavelimited.com.ng <br>
                             0706 961 5095 <br>
-                            7 Adegboyega Close, Ibadan Lagos
+                            Suite 2C, No 11, Rofab Shopping Complex, <br> Sango-Eleyele Road, Ibadan Oyo State.
                         </p>
                         <div class="socail_links">
                             <ul role=list>
                                 <li role="listitem">
-                                    <a href="#">
+                                    <a href="https://www.facebook.com/profile.php?id=61555966546717&mibextid=ZbWKwL" target="_blank">
                                         <i class="ti-facebook"></i>
                                     </a>
                                 </li>
                                 <li role="listitem">
-                                    <a href="#">
-                                        <i class="fa fa-google-plus"></i>
+                                    <a href="https://www.linkedin.com/company/sparkling-wave" target="_blank">
+                                        <i class="fa fa-linkedin"></i>
                                     </a>
                                 </li>
                                 <li role="listitem">
-                                    <a href="#">
+                                    <a href="https://x.com/Sparklingw31303">
                                         <i class="fa fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li role="listitem">
-                                    <a href="#">
+                                    <a href="https://www.instagram.com/sparklingwave247" target="_blank">
                                         <i class="fa fa-instagram"></i>
                                     </a>
                                 </li>
@@ -360,10 +363,10 @@
                         </h3>
                         <!-- Functioning Newsletter -->
                         <form action="mailto:hello@sparklingwavelimited.com.ng" method="post" enctype="text/plain" class="newsletter_form" id="newsletterForm">
-                          <input type="email" placeholder="Enter your email" id="emailInput" name="email" required>
-                          <button type="submit">Subscribe</button>
+                        <input type="email" placeholder="Enter your email" id="emailInput" name="email" required>
+                        <button type="submit">Subscribe</button>
                         </form>
-                      
+                    
                         <p class="newsletter_text">Join our newsletter for updates and insights</p>
                     </div>
                 </div>
@@ -421,7 +424,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Newsletter submission Js -->
  <!-- <script src="./js/newsletterSubmission.js"></script> -->
 
-<script src="js/main.js"></script>
+<script src="/js/main.js"></script>
 </body>
 
 </html>
