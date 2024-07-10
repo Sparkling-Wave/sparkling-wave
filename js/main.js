@@ -320,7 +320,7 @@ function submitLoanOfferFromWhatsApp() {
   const message = document.getElementById('message').value;
 
   if (name && email && phone && purpose && requestedAmount && month) {
-      const whatsappNumber = '1234567890'; // Replace with your WhatsApp number
+      const whatsappNumber = '07069615095'; // Replace with your WhatsApp number
       const whatsappMessage = `Hello, I am ${name}. I would like to request a loan of ${requestedAmount} for ${purpose} for a duration of ${month}. My email is ${email} and my phone number is ${phone}. Additional message: ${message}`;
       const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
       window.open(whatsappURL, '_blank');
