@@ -534,6 +534,41 @@ h3 {
   outline: none;
 }
 
+.btn-link{
+  background: #500480;
+  color: #fff;
+  display:flex;
+  padding: 11px 29px 13px 29px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff !important;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.btn-link:hover {
+  color: #500480 !important;
+  border: 1px solid #500480;
+  background: transparent;
+  text-decoration: none;
+}
+.btn-link:focus {
+  outline: none;
+}
+
+
 /* line 52, ../../Arafath/CL/December/234. Finance/HTML/scss/_btn.scss */
 .boxed-btn4 {
   display: inline-block;

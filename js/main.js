@@ -311,20 +311,21 @@
 
 // This code allow you to send a form message from a form to your desired whatsapp Number
 function submitLoanOfferFromWhatsApp() {
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const phone = document.getElementById('phone').value;
-  const purpose = document.getElementById('purpose').value;
   const requestedAmount = document.getElementById('requestedAmount').value;
   const month = document.getElementById('month').value;
-  const message = document.getElementById('message').value;
 
-  if (name && email && phone && purpose && requestedAmount && month) {
-      const whatsappNumber = '07069615095'; // Replace with your WhatsApp number
-      const whatsappMessage = `Hello, I am ${name}. I would like to request a loan of ${requestedAmount} for ${purpose} for a duration of ${month}. My email is ${email} and my phone number is ${phone}. Additional message: ${message}`;
+  if (requestedAmount && month) {
+      const whatsappNumber = '07069615095';  // Without country code, just like your working example
+      
+      const whatsappMessage = `
+          Loan Request Details:
+          Amount Requested: ${requestedAmount}
+          Duration: ${month}
+      `;
+      
       const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
       window.open(whatsappURL, '_blank');
   } else {
-      alert('Please fill in all the required fields.');
+      alert('Please select both amount and duration.');
   }
 }
