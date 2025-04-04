@@ -32,7 +32,10 @@
     <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="./img/favicon/site.webmanifest">
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
+
 
 <body>
     <!-- header-start -->
@@ -395,74 +398,65 @@
     </div>
 
     <!-- testimonial_area  -->
-    <div class="testimonial_area  ">
+    <section class="bg-light py-5 mt-5" id="testimonials">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="testmonial_active owl-carousel">
-                        <div class="single_carousel">
-                            <div class="row">
-                                <div class="col-lg-11">
-                                    <div class="single_testmonial d-flex align-items-center">
-                                        <div class="thumb">
-                                            <img src="img/testmonial/Kazeem.jpg" alt="">
-                                            <div class="quote_icon">
-                                                <i class="Flaticon flaticon-quote"></i>
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <p>Thanks to Sparkling Wave Investment, I now have the car of my dreams! Their seamless process and personalized service made it possible for me to purchase a vehicle without hassle. I'm grateful for their support and highly recommend their services to anyone in need of financial assistance.</p>
-                                            <span>- Kazeem Olarewaju</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_carousel">
-                            <div class="row">
-                                <div class="col-lg-11">
-                                    <div class="single_testmonial d-flex align-items-center">
-                                        <div class="thumb">
-                                            <img src="img/testmonial/Favour.jpg" alt="testimonial-img">
-                                            <div class="quote_icon">
-                                                <i class=" Flaticon flaticon-quote"></i>
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <p>As a small business owner, securing funding can be daunting, but Sparkling Wave Investment Company Limited made the process seamless. Their flexible terms and quick approval allowed me to expand my operations and realize my business goals. With their support, my business is thriving like never before.</p>
-                                            <span>- Favour Iroghama</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_carousel">
-                            <div class="row">
-                                <div class="col-lg-11">
-                                    <div class="single_testmonial d-flex align-items-center">
-                                        <div class="thumb">
-                                            <img src="img/testmonial/Tovia.jpg" alt="Testimony">
-                                            <div class="quote_icon">
-                                                <i class="Flaticon flaticon-quote"></i>
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <p>I was hesitant about taking out a loan until I discovered Sparkling Wave Investment Company Limited. Their Cash Loan service exceeded all my expectations. The application process was seamless, and I was impressed by how quickly they processed my request. What truly stood out to me was their commitment to transparency and affordability—their processing fee was the lowest I found, making it a no-brainer choice for me. Thanks to Sparkling Wave, I was able to address my financial needs without any stress or hassle. I highly recommend their services to anyone in need of financial assistance.</p>
-                                            <span>- Stephen Tovia</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          <h2 class="text-center mb-5 fw-bold">What Our Clients Say</h2>
+          <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+      
+              <!-- Testimonial 1 -->
+              <div class="carousel-item active">
+                <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+                  <img src="img/testmonial/Kazeem.jpg" class="rounded-circle shadow" style="width: 120px; height: 120px; object-fit: cover;" alt="Kazeem">
+                  <div>
+                    <p class="lead">“Thanks to Sparkling Wave Investment, I now have the car of my dreams! Their seamless process and personalized service made it possible for me to purchase a vehicle without hassle. I'm grateful for their support and highly recommend their services to anyone in need of financial assistance.”</p>
+                    <h6 class="fw-bold">- Kazeem Olarewaju</h6>
+                  </div>
                 </div>
+              </div>
+      
+              <!-- Testimonial 2 -->
+              <div class="carousel-item">
+                <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+                  <img src="img/testmonial/Favour.jpg" class="rounded-circle shadow" style="width: 120px; height: 120px; object-fit: cover;" alt="Favour">
+                  <div>
+                    <p class="lead">“As a small business owner, securing funding can be daunting, but Sparkling Wave Investment Company Limited made the process seamless. Their flexible terms and quick approval allowed me to expand my operations and realize my business goals.”</p>
+                    <h6 class="fw-bold">- Favour Iroghama</h6>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Testimonial 3 -->
+              <div class="carousel-item">
+                <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+                  <img src="img/testmonial/Tovia.jpg" class="rounded-circle shadow" style="width: 120px; height: 120px; object-fit: cover;" alt="Tovia">
+                  <div>
+                    <p class="lead">“I was hesitant about taking out a loan until I discovered Sparkling Wave Investment Company Limited. The application process was seamless, and their transparency and low processing fees made the decision easy. Highly recommended!”</p>
+                    <h6 class="fw-bold">- Stephen Tovia</h6>
+                  </div>
+                </div>
+              </div>
+      
             </div>
+      
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+      
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-    </div>
+      </section>
+      
     <!-- /testimonial_area  -->
 
     <!--Brand Area Start-->
-     <div class="brad_area">
+     <div class="brad_area ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -633,7 +627,7 @@
     <script src="js/gijgo.min.js"></script>
     <script src="js/slick.min.js"></script>
   
-  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   
     <!--contact js-->
     <script src="js/contact.js"></script>
