@@ -6966,6 +6966,45 @@ h6 {
   border-radius: 10px;
 }
 
+.core-values {
+  background: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+  margin-block-end: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+
+.core-values-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.core-values-list li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+.core-values-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #00b894; /* Green check */
+  font-weight: bold;
+}
+
+.core-values-list li:hover {
+  color: #00b894;
+  transform: translateX(5px);
+}
+
 @media (max-width: 576px) {
   /* line 48, ../../Arafath/CL/December/234. Finance/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card .card-body {
